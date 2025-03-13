@@ -683,7 +683,6 @@ class Plant:
       RP 1 is considered to represent the total pool of leaves by default -> can change this later
       """
       self.__Leaf_Area_Index = self.__parameters['Specific_leaf_area'] * self.__resource_pools[0].current_size * 1/self.__parameters['Single_plant_ground_area']
-      #self.__Leaf_Area_Index = 0.03 * self.__resource_pools[0].current_size * 1/self.__parameters['Single_plant_ground_area']
 
     def simulate_plant(self, environmental_variables):
       """
@@ -692,7 +691,7 @@ class Plant:
       self.update_thermal_age(environmental_variables)
       self.carry_out_photosynthesis(environmental_variables)
       self.update_carbon_pool(environmental_variables)
-      #self.carry_out_maintenance_allocation()
+      #self.carry_out_maintenance_allocation()  # PLACEHOLDER
       self.carry_out_growth_allocation()
       self.update_leaf_area_index()
 
