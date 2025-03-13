@@ -8,8 +8,7 @@ Original file is located at
 """
 
 #@title Model handler class
-#from IPython.display import display, HTML
-#display(HTML('<h1 style="color: blue; background-color: lightyellow; padding: 10px; border-radius: 5px;">Custom Header</h1>'))
+
 
 import numpy as np
 import pandas as pd
@@ -463,7 +462,7 @@ class PriorityQueue:
             nitrogen_pool -= nitrogen_allocation
         return carbon_pool, nitrogen_pool
 
-from typing_extensions import Self
+
 #@title Plant class
 class Plant:
     """
